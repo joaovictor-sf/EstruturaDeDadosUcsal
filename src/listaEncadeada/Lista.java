@@ -53,12 +53,10 @@ public class Lista {
         if (inicio == null) return;
         while (inicio.proximo != null){
             inicio = inicio.proximo;//Substitui o valor do incio pelo proximo valor
-            //tamanho--;
         }
 
         inicio = null;
         tamanho = 0;
-        //tamanho--;
     }
 
     public String removIni() {
@@ -95,9 +93,6 @@ public class Lista {
             local = local.proximo;
             posicao++;
         }
-        //if (local.nome == nome){
         return "Esta na lista na posição " + posicao;
-        //}
-        //return "Não esta na lista";
     }
 }
